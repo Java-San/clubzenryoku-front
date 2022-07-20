@@ -1,1 +1,2 @@
 # clubzenryoku-front
+# clubzenryoku-front
