@@ -1,2 +1,24 @@
+.custom-page{
+    position: relative;
+    height: 80%;
+}
+.custom-page::before{
+    content: "";
+    background: url('./../../../assets/img/tatami-1.jpg') no-repeat;
+    background-size: cover;
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+h2,p{
+    position: relative;
 
+    color: #ecf0f4;
+    letter-spacing: 7px;
+    font-size: 30px;
+}
 
