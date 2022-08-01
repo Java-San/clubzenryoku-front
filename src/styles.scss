@@ -1,18 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
 @import "../src/assets/scss/tools.scss";
 
-html, body { height: 100%; }
+// html, body { height: 100%; }
+// @font-face {
+//     font-family: 'LibreFranklin';
+//     src: local('LibreFranklin'), url(./assets/fonts/LibreFranklin/LibreFranklin-Regular.ttf) format('truetype');
+// }
+
+// body{
+//     margin: 0;
+//     font-family: 'LbreFranklin', Arial, Helvetica, sans-serif;
+// }
+
+// * {
+//     font-family: 'LbreFranklin', Arial, Helvetica, sans-serif;
+// }
+
 @font-face {
-    font-family: 'LibreFranklin';
-    src: local('LibreFranklin'), url(./assets/fonts/LibreFranklin/LibreFranklin-Regular.ttf) format('truetype');
+    font-family: 'Oxygen';
+    src: local('Oxygen'), url(./assets/fonts/Oxygen/Oxygen-Regular.ttf) format('truetype');
 }
 
 body{
     margin: 0;
-    font-family: 'LbreFranklin', Arial, Helvetica, sans-serif;
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
 }
 
 * {
-    font-family: 'LbreFranklin', Arial, Helvetica, sans-serif;
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
 }
-

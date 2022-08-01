@@ -1,20 +1,20 @@
 .custom-page{
+    background-color: #3184ce;
     position: relative;
-    height: 80%;
 }
 .custom-page::before{
     content: "";
     background: url('./../../../assets/img/tatami-1.jpg') no-repeat;
     background-size: cover;
-    
+    // height: 120%;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.6;
+    opacity: 0.4;
 }
-h2,p{
+h2{
     position: relative;
 
     color: #ecf0f4;
@@ -22,3 +22,12 @@ h2,p{
     font-size: 30px;
 }
 
+.parrafo{
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    font-weight: lighter;
+    color: #ecf0f4;
+    font-size: 30px;
+}
