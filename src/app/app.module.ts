@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app/app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 // Modules
 import { SharedModule } from './shared/shared.module';
 
 // Components
 import { ProvisoryComponent } from './components/provisory/provisory.component';
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './shared/material.module';
+
 
 @NgModule({
   declarations: [
@@ -22,9 +22,9 @@ import { MaterialModule } from './material.module';
     BrowserAnimationsModule,
     MaterialModule,
     SharedModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

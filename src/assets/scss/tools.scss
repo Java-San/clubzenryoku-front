@@ -2,6 +2,7 @@
 // colors
 // #f44f09 orange
 // #d13c06 red
+// #ecf0f4 snowwhite
 
 // MARGIN
 .m-0{
@@ -13,13 +14,12 @@
     padding: 3px;
 }
 
-// FONT WEIGHT
-.fw-light{
-    font-weight: lighter;
-}
-.fw-bold{
-    font-weight: bold;
-}
+// FONT COLOR
+.f-c-snow{ color: #ecf0f4; }
+
+// FONT SIZE
+.f-s-40{ font-size: 40px; }
+.f-s-30{ font-size: 30px; }
 
 // text
 .ta-center{
