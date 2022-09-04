@@ -4,40 +4,43 @@
 // #d13c06 red
 // #ecf0f4 snowwhite
 
+
+// WIDTH
+.w-36{ width: 36% }
+.w-80{ width: 80%; }
+
 // MARGIN
 .m-0{
     margin: 0;
 }
 
+.mr-l-20{ margin-left: 20px; }
+
 // PADDING
 .pd-3{
     padding: 3px;
 }
+.pd-20{ padding: 20px; }
+
+.pd-r-2{ padding-right: 2px; }
+.pd-r-5{ padding-right: 5px; }
+.pd-r-10{ padding-right: 10px; }
+
+.pd-b-5{ padding-bottom: 5px; }
+.pd-b-20{ padding-bottom: 20px; }
+
 
 // FONT COLOR
 .f-c-snow{ color: #ecf0f4; }
 
 // FONT SIZE
-.f-s-40{ font-size: 40px; }
+.f-s-22{ font-size: 22px; }
+.f-s-26{ font-size: 26px; }
 .f-s-30{ font-size: 30px; }
-
-// text
-.ta-center{
-    text-align: center;
-}
-
-
-.d-flex{
-    display: flex;
-}
-
-.ai-center{
-    align-items: center;
-}
+.f-s-40{ font-size: 40px; }
 
 
 // HEADER, FOOTER
 .h-f-backgroud{
-    // background-color: #17255b;
     background: linear-gradient(83deg, rgba(49,132,206,1) 0%, rgba(17,64,147,1) 44%, rgba(23,37,91,1) 100%);
 }

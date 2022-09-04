@@ -6,6 +6,14 @@ section{
     background-color: #3184ce;
     position: relative;
 }
+
+.custom-padding{
+    padding: 40px 150px 30px 150px;
+}
+.custom-padding-mob{
+    padding: 40px 25px 30px 25px;
+}
+
 .custom-page::before{
     content: "";
     background: url('./../../../assets/img/tatami-1.jpg') no-repeat;
@@ -20,10 +28,8 @@ section{
 }
 h2{
     position: relative;
-
     color: #ecf0f4;
     letter-spacing: 7px;
-    font-size: 30px;
 }
 
 .parrafo{
@@ -33,5 +39,4 @@ h2{
     position: relative;
     font-weight: lighter;
     color: #ecf0f4;
-    font-size: 30px;
 }

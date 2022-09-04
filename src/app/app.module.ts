@@ -22,7 +22,7 @@ import { MaterialModule } from './shared/material.module';
     BrowserAnimationsModule,
     MaterialModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

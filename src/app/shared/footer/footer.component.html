@@ -1,28 +1,28 @@
 <footer>
-    <div style="padding: 20px 60px;" class="d-flex align-items-center justify-content-between h-f-backgroud ">
-        <span>
-            <img src="assets/img/ifj.png" alt="" class="logo" style="height: 100px; padding-right: 10px;">
-            <img src="assets/img/fejuchile.png" alt="" class="logo" style="height: 100px; padding-right: 5px;">
+    <div *ngIf="!isXSmall; else footerMob" class="pd-20 d-flex align-items-center justify-content-between h-f-backgroud">
+        <span class="d-flex">
+            <img src="assets/img/ifj.png" alt="" class="logo-height pd-r-10">
+            <img src="assets/img/fejuchile.png" alt="" class="logo-height pd-r-5">
             
         </span>
 
-        <span>
-            <a href="https://www.instagram.com/clubzenryoku/" target="_blank">
-                <i class="bi bi-instagram f-s-40 f-c-snow"></i>
-                <span class="club-name">
+        <span class="d-flex">
+            <a href="https://www.instagram.com/clubzenryoku/" target="_blank" class="">
+                <span class="d-flex align-items-center club-name">
+                    <i class="bi bi-instagram f-s-26 f-c-snow pd-r-2"></i>
                     ClubZenryoku
                 </span>
             </a>
 
-            <a href="https://www.facebook.com/ClubdeJudoZenryoku1" target="_blank" style="margin-left: 20px;">
-                <i class="bi bi-facebook f-s-40 f-c-snow"></i>
-                <span class="club-name">
+            <a href="https://www.facebook.com/ClubdeJudoZenryoku1" target="_blank" class="mr-l-20">
+                <span class="d-flex align-items-center club-name">
+                    <i class="bi bi-facebook f-s-26 f-c-snow pd-r-2"></i>
                     ClubZenryoku
                 </span>
             </a>
         </span>
 
-        <span class="d-flex">
+        <span class="d-flex align-items-center">
             <i class="bi bi-c-circle f-s-30 f-c-snow"></i>
 
             <span class="copyright-label">
@@ -35,7 +35,44 @@
         </span>
     </div>
 
+    <ng-template #footerMob>
+        <div class="container-padding-mob  h-f-backgroud">
+            <span class="pd-b-20 d-flex align-items-center justify-content-between">
+                <span class="d-flex align-items-center">
+                    <img src="assets/img/ifj.png" alt="" class="logo-height-mob pd-r-10">
+                    <img src="assets/img/fejuchile.png" alt="" class="logo-height-mob">
+                </span>
+                
+                <span>
+                    <a href="https://www.instagram.com/clubzenryoku/" target="_blank" class="d-flex align-items-center pd-b-5">
+                        <span class="club-name-mob">
+                            <i class="bi bi-instagram f-c-snow"></i>
+                            ClubZenryoku
+                        </span>
+                    </a>
+        
+                    <a href="https://www.facebook.com/ClubdeJudoZenryoku1" target="_blank" class="d-flex align-items-center">
+                        <span class="club-name-mob">
+                            <i class="bi bi-facebook f-c-snow"></i>
+                            ClubZenryoku
+                        </span>
+                    </a>
+                </span>
+            </span>
+
+            <span class="d-flex align-items-center">
+                <i class="bi bi-c-circle f-s-22 f-c-snow"></i>
+                
+                <span class="copyright-label">
+                    <span class="fw-bold">Club de Judo ClubZenryoku</span>
+                    <br>
+                    Santiago de Chile, 2022. Todos los derechos reservados.
+                </span>
+            </span>            
+        </div>
+    </ng-template>
+
     <div style="background-color: #000000; text-align: end;">
-        <span style="padding: 5px; color: #ffffff; font-weight: bold; font-size: 10px;">Desarrollado por Javiera Quiñones Sandoval java-sandoval.io</span>
+        <span style="color: #ffffff; font-weight: bold; font-size: 10px;">Desarrollado por Javiera Quiñones Sandoval java-sandoval.io</span>
     </div>
 </footer>

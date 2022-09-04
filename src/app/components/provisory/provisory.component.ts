@@ -1,14 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-
+import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 @Component({
   selector: 'app-provisory',
   templateUrl: './provisory.component.html',
   styleUrls: ['./provisory.component.scss']
 })
 export class ProvisoryComponent implements OnInit {
+  isXSmall: boolean = false;
+  widthChange: any;
 
-  constructor() { }
+  constructor(
+    public breakpointObserver: BreakpointObserver,
+  ) {
+    this.checkBreakpoints();
+  }
 
+  checkBreakpoints() {
+    this.widthChange = this.breakpointObserver
+      .observe([Breakpoints.XSmall])
+      .subscribe((state: BreakpointState) => {
+        this.isXSmall = this.breakpointObserver.isMatched(Breakpoints.XSmall);
+      });
+  }
+  
   ngOnInit(): void {
   }
 

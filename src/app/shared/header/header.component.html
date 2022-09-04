@@ -1,6 +1,6 @@
 <header>
     <mat-toolbar class="h-f-backgroud">
-        <div class="logo-container pd-3 d-flex ai-center">
+        <div class="pd-3" [ngClass]="isXSmall ? 'logo-container-mob' : 'logo-container'">
             <img src="assets/img/logo.png" alt="" class="logo">
             <img src="assets/img/nombre-club.png" alt="" class="nombre-club">
         </div>
